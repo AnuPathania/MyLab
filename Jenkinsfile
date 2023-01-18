@@ -1,14 +1,16 @@
 pipeline{
     //Directives
     agent any
-    
+    tools{
+           maven 'maven 11.0.17'   
+    }
     stages {
         // Specify various stage with in stages
 
         // stage 1. Build
         stage ('Build'){
             steps {
-                 echo ' building......'
+                 sh ''
                 
             }
         }
