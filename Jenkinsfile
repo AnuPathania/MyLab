@@ -2,7 +2,7 @@ pipeline{
     //Directives
     agent any
     tools{
-           maven "maven 11.0.17"   
+           maven "MAVEN"   
     }
     stages {
         // Specify various stage with in stages
