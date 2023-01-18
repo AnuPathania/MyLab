@@ -1,10 +1,7 @@
 pipeline{
     //Directives
     agent any
-    tools {
-        maven 'Maven 3.3.9' 
-    }
-
+    
     stages {
         // Specify various stage with in stages
 
@@ -12,7 +9,7 @@ pipeline{
         stage ('Build'){
             steps {
                  echo ' building......'
-                sh "mvn clean verify"
+                
             }
         }
 
